@@ -5,6 +5,10 @@
 declare namespace App {
 	// interface Locals {}
 	// interface Platform {}
-	// interface Session {}
+	interface Session {
+		user: import("discord-api-types/v10").APIUser | undefined
+		accessToken: string | undefined
+		refreshToken: string | undefined
+	}
 	// interface Stuff {}
 }
